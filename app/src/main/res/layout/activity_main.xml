@@ -18,16 +18,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="10"
+            android:background="#E4E5E7"
             android:gravity="center"
             android:text="0"
+            android:textColor="@color/black"
             android:textSize="200sp" />
 
         <Button
-            android:onClick="ResetButton"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Reset" />
+            android:background="#AAC6DE"
+            android:onClick="ResetButton"
+            android:text="Reset"
+            android:textColor="@color/black"
+            android:layout_margin="1pt"/>
 
     </LinearLayout>
 
@@ -38,18 +44,24 @@
         android:orientation="horizontal">
 
         <Button
-            android:onClick="CountDownButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:text="Count Down" />
+            android:layout_weight="1"
+            android:background="#AAC6DE"
+            android:onClick="CountUpButton"
+            android:text="Count Up"
+            android:textColor="@color/black"
+            android:layout_margin="1pt"/>
 
         <Button
-            android:onClick="CountUpButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:text="Count Up" />
+            android:layout_weight="1"
+            android:background="#AAC6DE"
+            android:onClick="CountDownButton"
+            android:text="Count Down"
+            android:textColor="@color/black"
+            android:layout_margin="1pt"/>
 
     </LinearLayout>
 </LinearLayout>
